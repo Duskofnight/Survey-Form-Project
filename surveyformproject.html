@@ -1,0 +1,45 @@
+<!-- Survey Form Project -->
+
+<!-- HTML File -->
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="surveyformstyles.css"/>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description" class="description">Please fill out this form with the required information</p>
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+      <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your Name"  required></label>
+      <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your Email" required></label>
+      <label for="number" id="number-label">Age <input id="number" type="number" min="10" max="99" placeholder="Age" required></label>
+      <label for="dropdown">What is your coding level?
+        <select id="dropdown">
+          <option value="">Select an Option</option>
+          <option value="1">Beginner</option>
+          <option value="1">Intermediate</option>
+          <option value="1">Advanced</option>
+        </select>
+      </label>
+      <p>Why did you make this account?</p>
+      <label for="personal-type"><input id="personal-type" type="radio" name="account-type" class="inline" value="personal">Personal</label>
+      <label for="school-type"><input id="school-type" type="radio" name="account-type" value="school" class="inline">School</label>
+      <p>What coding language would you like to learn?</p>
+        <label for="python" class="lang"><input type="checkbox" id="python" value="python">Python</label>
+        <label for="html" class="lang"><input type="checkbox" id="html" value="html">HTML</label>
+        <label for="css" class="lang"><input type="checkbox" id="css" value="css">CSS</label>
+        <label for="js" class="lang"><input type="checkbox" id="js" value="js">JavaScript</label>
+        <label for="c++" class="lang"><input type="checkbox" id="c++" value="c++">C++</label>
+        <br>
+        <label for="comments">Any other comments: 
+          <textarea id="comments" name="comments" rows="3" cols="40" placeholder="Enter your comment here..." required></textarea>
+        </label>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+
+</html>
